@@ -29,13 +29,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Download posted.txt artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: posted-txt
-          path: .
-        continue-on-error: true
-
       - name: Run HnF Poster Bot
         run: |
           pwd
@@ -49,8 +42,3 @@ jobs:
           NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
           GIST_ID: ${{ secrets.GIST_ID }}
           GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-      - name: Upload posted.txt artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: posted-txt
-          path: posted.txt
