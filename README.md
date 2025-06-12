@@ -1,4 +1,4 @@
-# HnFBot
+# HnFBot [![Run HnF Bot](https://github.com/axelvyrn/HnFBot/actions/workflows/hnfbot.yml/badge.svg)](https://github.com/axelvyrn/HnFBot/actions/workflows/hnfbot.yml)
 A bot that reposts every new ~HealthAndFitness post from Stacker.News to Twitter and Nostr
 
 ![95458](https://github.com/user-attachments/assets/dcc1b80c-0b48-481c-9d52-4fd7d9fd6e2b)
