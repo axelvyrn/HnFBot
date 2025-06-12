@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Use npm mirror (optional)
+      - name: Use npm mirror
         run: npm config set registry https://registry.npmmirror.com
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Set up Python
         uses: actions/setup-python@v5
